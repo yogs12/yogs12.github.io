@@ -1,0 +1,674 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+:root {
+    --brand: #0e334e;
+    --dark: #092032;
+    --body: #516171;
+    --border: rgba(0,0,0,0.08);
+    --shadow: 0px 6px 30px rgba(0, 0, 0, 0.08);
+    
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+    color: var(--body);
+    line-height: 1.7;
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-1,.display-2,.display-3,.display-4 {
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: var(--dark);
+    transition: all 0.4s ease;
+    font-weight: 500;
+}
+
+a:hover {
+    color: var(--brand);
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-brand {
+    color: var(--brand) !important;
+}
+
+
+.hero-slider .owl-prev,
+.hero-slider .owl-next{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    width: 60px !important;
+    height: 60px !important;
+    display: block;
+    display: grid;
+    place-items: center;
+    color: #fff !important;
+    border-radius: 100px;
+    line-height: 0;
+    border-radius: 100px !important;
+    position: absolute;
+    top: 50%;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    transition: all 0.4s ease;
+    margin-top: -30px !important;
+}
+
+.owl-prev {
+    left: 0;
+}
+.owl-next {
+    right: 0;
+}
+
+.hero-slider .owl-prev:hover,
+.hero-slider .owl-next:hover {
+    background-color: var(--brand) !important; 
+}
+
+.owl-dot.active span{
+    background-color: var(--brand) !important;
+}
+
+/* navbar */
+.top-nav {
+    background-color: var(--brand);
+    color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.top-nav p {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.top-nav span,
+.top-nav i {
+    vertical-align: middle;
+}
+
+.navbar {
+    box-shadow: var(--shadow);
+}
+
+.social-icons a {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.social-icons a:hover {
+    background-color: #fff;
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: var(--dark);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--brand);
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.navbar-brand .dot {
+    color: var(--brand);
+}
+
+.navbar li {
+    list-style: none;
+}
+.navbar .dropdown {
+    display: none;
+}
+
+.navbar ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color:#fff;
+}
+
+.btn {
+    padding: 8px 26px;
+}
+
+.btn-brand {
+    border-color: var(--brand);
+    background-color: var(--brand);
+    color: #fff;
+}
+
+.btn-brand:hover {
+    background-color: #d64022;
+    border-color: #d64022;
+    color: #fff;
+}
+
+.intro {margin-bottom: 36px;
+text-align: center;}
+
+.intro p {
+    max-width: 500px;
+}
+.intro h6{
+    color: var(--brand);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.intro h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info-box {
+    align-items: center;
+    display: center;
+}
+
+.info-box img {
+    width: 300px;
+}
+
+
+#milestone {
+    background: linear-gradient(rgba(255, 77, 41, 0.85), rgba(255, 77, 41, 0.85)), url(../img/bg_banner1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#milestone h1,
+#milestone p {
+    color: #fff;
+}
+
+.service {
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.service h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+
+.service img {
+    width: 90px;
+}
+
+.product {
+    position: relative;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+
+.product h5 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+}
+.product a {
+    text-decoration: none;
+}
+
+.product p {
+    padding: 10px;
+    text-align:start;
+    color: black;
+    font-size:15px ;
+    font-style: normal;
+}
+
+.product img {
+    width: 300px;
+}
+
+
+.blue-text {
+    color: rgb(0, 110, 255);
+}
+
+.project {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.project h6 {
+    font-weight: 400;
+}
+
+.project h6::before {
+    content: "";
+    height: 2px;
+    width: 30px;
+    display: inline-block;
+    background: var(--brand);
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+.project .overlay {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 76, 41, 0) 0%, var(--dark) 100%);
+}
+
+.project .content {
+    position: absolute;
+    left: 10%;
+    bottom: 10%
+}
+
+.project h2 {
+    color: #fff;
+}
+
+
+.box {
+
+    flex-shrink: 0;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.detail {
+    position: relative;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.detail video {
+    margin-top: 2px;
+    margin-left: 25px;
+}
+
+.detail .content {
+    padding: 32px;
+}
+
+
+.detail h5 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.detail small {
+    text-transform: uppercase;
+    color: var(--brand);
+    text-decoration: underline;
+}
+
+.blog-post {
+    position: relative;
+    background-color: #fff;
+    box-shadow: var(--shadow);
+}
+
+.blog-post a {
+    text-decoration: none;
+}
+
+.blog-post .content {
+    padding: 32px;
+}
+
+
+.blog-post h5 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.blog-post small {
+    text-transform: uppercase;
+    color: var(--brand);
+    text-decoration: underline;
+}
+
+footer {
+    background: linear-gradient(-90deg, rgba(8, 32, 50, 0.8), rgba(8, 32, 50, 0.8)),url(../img/bg_banner1.jpg), #082032;;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer .footer-top {
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+footer .navbar-brand {
+    color: #fff;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+footer .social-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.loader {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    z-index: 99999;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+
+input.form-control {
+    border-color: transparent;
+    height: 44px;
+}
+
+.form-control {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-color: rgba(0, 0, 0, 0.04);;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--brand);
+}
+
+.background {
+    background-image: linear-gradient(to right, #ff0000, #ff00b3, #0004ff); /* Tiga warna latar belakang */
+    color: white; /* Warna teks putih */
+    font-size: 24px; /* Ukuran teks yang lebih besar */
+    padding: 5px 10px; /* Ruang di sekitar teks */
+    display: inline-block; /* Memastikan latar belakang hanya mencakup teks */  
+    border-radius: 10px; /* Radius sudut */
+}
+.text-styling {
+    color: #808080; /* Warna teks abu-abu */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Contoh gaya font yang menarik */
+    font-size: 28px; /* Ukuran teks */
+}
+
+.big-text {
+    font-size: 36px; /* Ukuran teks yang lebih besar */
+    background-image: linear-gradient(to right,  #ff0000, #ff00b3, #0004ff); /* Tiga warna latar belakang */
+    -webkit-background-clip: text; /* Menerapkan latar belakang sebagai warna teks di browser WebKit */
+    background-clip: text; /* Menerapkan latar belakang sebagai warna teks */
+    color: transparent; /* Membuat teks transparan untuk mengungkapkan latar belakang */
+    font-weight: bold; /* Ketebalan teks */
+}
+.gradient-text {
+    background-image: linear-gradient(to right,  #ff0000, #ff00b3, #0004ff); /* Tiga warna latar belakang */
+    -webkit-background-clip: text; /* Menerapkan latar belakang sebagai warna teks di browser WebKit */
+    background-clip: text; /* Menerapkan latar belakang sebagai warna teks */
+    color: transparent; /* Membuat teks transparan untuk mengungkapkan latar belakang */
+}
+
+#aboutme {
+    background-color: #f2f2f2; /* Latar belakang warna abu-abu */
+}
+.img-container {
+    position: relative;
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    background-image: linear-gradient(to right,  #ff0000, #ff00b3, #0004ff); /* Tiga warna latar belakang */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow */
+    transform: translateY(0); /* Awalnya tidak ada transformasi */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transisi smooth */
+}
+
+.img-container:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5); /* Shadow saat hover */
+    transform: translateY(-5px); /* Efek naik saat hover */
+}
+
+.img-container img {
+    display: block;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Konten rata kiri dan rata kanan */
+    align-items: center; /* Konten vertikal tengah */
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+#contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; /* Konten rata kiri dan rata kanan */
+    align-items: center; /* Konten vertikal tengah */
+}
+
+label {
+    font-weight: bold;
+    flex: 1;
+    margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    flex: 2;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.skills {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skill-box {
+    display: flex;
+    
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-box h3 {
+    margin: 0;
+}
+
+.skill-level {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}.skills {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-box {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-box h3 {
+    margin: 0;
+}
+
+.skill-level {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.skill-logo {
+    width: 50px; /* Sesuaikan dengan ukuran logo */
+    height: 50px; /* Sesuaikan dengan ukuran logo */
+    margin-right: 20px; /* Jarak antara logo dan detail skill */
+}
+
+.skill-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Agar logo sesuai dalam kotak */
+}
+.skill-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1; /* Detail skill mengisi ruang yang tersisa */
+}
+
+.skill-details h3 {
+    margin: 0;
+}
+
+#project {
+    padding: 20px;
+    background-color: #f8f9fa; /* Warna latar belakang */
+    margin-top: 50px; /* Jarak dari atas halaman */
+    margin-bottom: 50px; /* Jarak dari bawah halaman */
+    border-radius: 10px; /* Membuat sudut elemen sedikit melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+
+.project-box {
+    display: flex;
+    margin-top: 20px;
+    background-color: #fff; /* Warna latar belakang kotak proyek */
+    border-radius: 10px; /* Membuat sudut elemen sedikit melengkung */
+    overflow: hidden; /* Mengatasi overflow dari gambar jika ukurannya terlalu besar */
+    max-width: 700px; /* Lebar maksimum kotak proyek */
+    margin-left: auto; /* Menggeser kotak proyek ke tengah */
+    margin-right: auto; /* Menggeser kotak proyek ke tengah */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+    transition: transform 0.2s ease; /* Animasi pop-out */
+}
+
+.project-box:hover {
+    transform: translateY(-5px); /* Efek pop-out saat dihover */
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-details h3 {
+    margin-top: 0;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
